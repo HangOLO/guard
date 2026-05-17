@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>逃離羅馬守衛：空墓之謎</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body data-scene="title">
+    <main id="app" aria-label="逃離羅馬守衛：空墓之謎">
+      <canvas id="gameCanvas" aria-label="羅馬墓口場景"></canvas>
+
+      <div id="uiLayer">
+        <div id="hud" class="hud" hidden>
+          <div class="hud-block">
+            <span class="hud-label">分數</span>
+            <strong id="scoreValue">0</strong>
+          </div>
+        </div>
+
+        <button id="soundButton" class="icon-button sound-button" type="button" aria-label="切換音效">
+          音效開啟
+        </button>
+
+        <section id="titleScreen" class="screen title-screen" aria-labelledby="gameTitle">
+          <div class="title-artboard" role="img" aria-label="逃離羅馬守衛：空墓之謎，羅馬士兵守在空墓前。">
+            <img class="title-art" src="assets/title-screen-concept.png" alt="" aria-hidden="true" />
+            <h1 id="gameTitle" class="visually-hidden">逃離羅馬守衛：空墓之謎</h1>
+            <button id="startButton" class="title-start-button" type="button" aria-label="開始遊戲">
+              <span class="visually-hidden">開始遊戲</span>
+            </button>
+          </div>
+        </section>
+
+        <section id="dialogueScreen" class="screen dialogue-screen" aria-live="polite" hidden>
+          <div class="dialogue-panel">
+            <p id="speakerName" class="speaker-name">羅馬守衛</p>
+            <p id="dialogueText" class="dialogue-text"></p>
+            <button id="dialogueNextButton" class="primary-button compact" type="button">下一句</button>
+          </div>
+        </section>
+
+        <section id="gameOverScreen" class="screen game-over-screen" aria-live="polite" hidden>
+          <div class="menu-panel">
+            <p class="eyebrow">你被羅馬士兵抓住了!</p>
+            <h2>遊戲結束</h2>
+            <p class="final-score">分數 <strong id="finalScoreValue">0</strong></p>
+            <p class="lesson-text">墳墓外有守衛，很難成功偷走屍體。</p>
+          </div>
+        </section>
+
+        <div id="approachControls" class="approach-controls" hidden>
+          <div class="direction-pad" role="group" aria-label="移動控制">
+            <button id="moveLeftButton" class="control-button approach-move-button" type="button" aria-label="向左移動">
+              <span aria-hidden="true">←</span>
+            </button>
+            <button id="moveRightButton" class="control-button approach-move-button" type="button" aria-label="向右移動">
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <button id="interactButton" class="control-button interact-button" type="button" aria-label="互動">
+            <span class="interaction-icon" aria-hidden="true"></span>
+            <span>互動</span>
+          </button>
+        </div>
+
+        <div id="runnerControls" class="runner-controls" hidden>
+          <button id="duckButton" class="control-button duck-button" type="button" aria-label="蹲下">蹲下</button>
+          <button id="jumpButton" class="control-button jump-button" type="button" aria-label="跳躍">跳躍</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="src/main.js" defer></script>
+  </body>
+</html>

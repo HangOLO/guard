@@ -1,0 +1,13 @@
+Create a detailed full-color pixel-art animation sheet for a side-scrolling runner game.
+
+Use the bright desert runner image just shown as the visual reference for pixel-art style, silhouette readability, crisp dark outlines, limited but rich pixel clusters, purple-dress woman identity, and Google-Dino-style side-scroller gameplay clarity. Do not copy the UI, score, text, clouds, tomb, props, or background.
+
+Subject: the same adult woman/matron as the reference runner: long dark brown hair, warm skin, purple dress/tunic, simple sandals, determined face. She is jumping while facing right. Keep the same woman identity in every cell; only the jump phase changes.
+
+Sheet layout: exactly 2 rows and 2 columns, four equal invisible cells. Frame order left-to-right, top row then bottom row: takeoff crouch and lift, rising jump with knees bent, peak airborne pose, landing recovery. Side view, facing right. Full body visible.
+
+Pixel style: careful detailed pixel art, crisp dark outline, no anti-aliased painterly blur, no high-resolution smooth painting, readable at game size.
+
+Containment rules: the entire character must fit fully inside each cell, centered in the central safe area, same body height and same pixel scale in every cell, leave clear magenta margin on all four sides, no hair, limbs, dress, or sandals may cross a cell edge. No dust clouds or detached motion effects.
+
+Background: 100% solid flat #FF00FF magenta across the whole sheet. No gradients in the background. No text, no UI, no labels, no borders, no visible grid lines, no speech bubbles, no scenery.

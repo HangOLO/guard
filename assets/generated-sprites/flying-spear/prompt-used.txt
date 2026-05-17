@@ -1,0 +1,13 @@
+Create a detailed full-color pixel-art projectile animation sheet for a side-scrolling runner game.
+
+Use the bright desert runner image just shown as the visual reference for pixel-art style and Roman weapon visual language: crisp dark outline, readable metal spearhead, wooden shaft, small warm highlights, side-scroller readability. Do not copy the UI, score, text, clouds, tomb, props, or background.
+
+Subject: a Roman flying spear projectile moving from right to left. It has a silver metal spearhead on the left side, a brown wooden shaft trailing to the right, small compact motion ticks or subtle pixel shimmer that stay close to the spear. The spear identity and size stay the same in every cell; only tiny internal highlight/trail changes.
+
+Sheet layout: exactly 1 row and 4 columns, four equal invisible cells. Frame order left-to-right. Projectile direction is right-to-left in every frame, spear tip points left.
+
+Pixel style: careful detailed pixel art, crisp dark outline, no anti-aliased painterly blur, no high-resolution smooth painting, readable at game size.
+
+Containment rules: the entire spear and any tiny motion tick must fit fully inside each cell, centered vertically, same projectile length and same pixel scale in every frame, leave clear magenta margin on all four sides, no spear tip, shaft, or motion tick may cross a cell edge.
+
+Background: 100% solid flat #FF00FF magenta across the whole sheet. No gradients in the background. No text, no UI, no labels, no borders, no visible grid lines, no speech bubbles, no scenery.

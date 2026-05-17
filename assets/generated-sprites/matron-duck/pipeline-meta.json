@@ -1,0 +1,175 @@
+{
+  "target": "asset",
+  "mode": "duck",
+  "prompt": "",
+  "role": "",
+  "input": "assets\\generated-sprites\\matron-duck\\source-generated.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 200,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 192,
+  "fit_scale": 0.86,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 3,
+  "min_component_area": 1,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "duck-1",
+    "duck-2",
+    "duck-3",
+    "duck-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 3,
+      "selected_component_area": 64427,
+      "selected_component_bbox": [
+        152,
+        191,
+        476,
+        516
+      ],
+      "crop_bbox": [
+        149,
+        188,
+        479,
+        519
+      ],
+      "edge_touch": false,
+      "output_size": [
+        135,
+        135
+      ],
+      "paste_position": [
+        28,
+        44
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 63863,
+      "selected_component_bbox": [
+        69,
+        205,
+        465,
+        516
+      ],
+      "crop_bbox": [
+        66,
+        202,
+        468,
+        519
+      ],
+      "edge_touch": false,
+      "output_size": [
+        165,
+        130
+      ],
+      "paste_position": [
+        13,
+        49
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 56651,
+      "selected_component_bbox": [
+        162,
+        195,
+        539,
+        422
+      ],
+      "crop_bbox": [
+        159,
+        192,
+        542,
+        425
+      ],
+      "edge_touch": false,
+      "output_size": [
+        157,
+        95
+      ],
+      "paste_position": [
+        17,
+        84
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 62541,
+      "selected_component_bbox": [
+        73,
+        89,
+        419,
+        424
+      ],
+      "crop_bbox": [
+        70,
+        86,
+        422,
+        427
+      ],
+      "edge_touch": false,
+      "output_size": [
+        144,
+        140
+      ],
+      "paste_position": [
+        24,
+        39
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

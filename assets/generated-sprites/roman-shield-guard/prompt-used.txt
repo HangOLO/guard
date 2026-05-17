@@ -1,0 +1,13 @@
+Create a detailed full-color pixel-art game sprite, one static character asset.
+
+Use the bright desert runner image just shown as the visual reference for pixel-art style and Roman guard visual language: crisp dark outlines, red and gold shield, silver helmet, bronze/iron armor, Roman soldier readability, side-scroller proportions. Do not copy the UI, score, text, clouds, tomb, props, or background.
+
+Subject: a Roman shield guard facing left, standing alert, full body visible. He carries a large red rectangular shield with gold decoration in front of his body and wears a silver helmet with red crest, bronze armor, red cloth accents, sandals. Static guard pose suitable as an obstacle or guard.
+
+Sheet layout: exactly 1 row and 1 column, a single centered sprite in one invisible cell. Side view or slight 3/4 side view, facing left.
+
+Pixel style: careful detailed pixel art, crisp dark outline, no anti-aliased painterly blur, no high-resolution smooth painting, readable at game size.
+
+Containment rules: the entire guard and shield must fit fully inside the cell, centered in the central safe area, leave clear magenta margin on all four sides, no spear, shield, crest, hand, or foot may cross the cell edge. No shadows under the character.
+
+Background: 100% solid flat #FF00FF magenta across the whole image. No gradients in the background. No text, no UI, no labels, no borders, no visible grid lines, no speech bubbles, no scenery.

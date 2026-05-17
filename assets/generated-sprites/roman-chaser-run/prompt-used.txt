@@ -1,0 +1,13 @@
+Create a detailed full-color pixel-art animation sheet for a side-scrolling runner game.
+
+Use the bright desert runner image just shown as the visual reference for pixel-art style and Roman guard visual language: crisp dark outlines, silver helmet, bronze/iron armor, red crest, red cloth accents, Roman soldier readability, side-scroller proportions. Do not copy the UI, score, text, clouds, tomb, props, or background.
+
+Subject: a light Roman chaser soldier running to the right, chasing the woman. He wears a silver helmet with red crest, bronze armor, red cloth accents, sandals. He carries only a short sword or short weapon held close to his body. No large shield, no long spear, no wide weapon trail. Keep the same soldier identity in every cell; only the running pose changes.
+
+Sheet layout: exactly 2 rows and 3 columns, six equal invisible cells. Frame order left-to-right across the first row, then left-to-right across the second row. Six-frame run loop: contact, push-off, airborne pass, opposite contact, opposite push-off, recovery to loop. Side view, facing right. Full body visible. Feet should stay on a consistent ground/bottom anchor line when touching the ground.
+
+Pixel style: careful detailed pixel art, crisp dark outline, no anti-aliased painterly blur, no high-resolution smooth painting, readable at game size.
+
+Containment rules: the entire soldier and short weapon must fit fully inside each cell, centered in the central 60% to 70% safe area, same body height and same pixel scale in every cell, leave clear magenta margin on all four sides, no weapon, crest, limbs, or sandals may cross a cell edge. No dust clouds or detached motion effects.
+
+Background: 100% solid flat #FF00FF magenta across the whole sheet. No gradients in the background. No text, no UI, no labels, no borders, no visible grid lines, no speech bubbles, no scenery.

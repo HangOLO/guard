@@ -1,0 +1,11 @@
+Detailed pixel-art night Roman desert runner background for a Google dinosaur style side-scrolling game, using the attached reference as the level-composition style target but without copying UI or actors.
+
+Canvas intent: wide responsive cover background for an HTML Canvas runner scene. Keep the playable ground lane clean and readable around the lower quarter of the image so separate game actors and obstacles can render on top.
+
+Required scene elements: deep blue night sky, bright moon, small stars, sparse dark clouds, sandy desert ground, layered desert hills, small cypress-like trees, Roman tomb carved into a sandy stone hill, warm torchlight glow, detailed stone blocks, subtle ground texture and pixel sand speckles.
+
+Tomb rule: the round tombstone must visibly seal the tomb entrance. Do not leave an open black doorway or walkable-looking entrance.
+
+Forbidden elements: no woman, no Roman soldiers, no flying spears, no shields, no UI, no score, no tutorial text, no hand cursor, no readable text, no foreground obstacles, no interactive objects.
+
+Style: crisp retro pixel art, more detailed than the first version, side-view runner composition, clean silhouettes, limited palette, strong moonlight and torchlight contrast, no painterly blur.

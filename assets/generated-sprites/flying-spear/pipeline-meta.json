@@ -1,0 +1,175 @@
+{
+  "target": "asset",
+  "mode": "projectile",
+  "prompt": "",
+  "role": "",
+  "input": "assets\\generated-sprites\\flying-spear\\source-generated.png",
+  "threshold": 160,
+  "edge_threshold": 220,
+  "duration": 200,
+  "rows": 1,
+  "cols": 4,
+  "cell_size": 192,
+  "fit_scale": 0.9,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "center",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 2,
+  "min_component_area": 1,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "projectile-1",
+    "projectile-2",
+    "projectile-3",
+    "projectile-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        384,
+        384
+      ],
+      "component_mode": "largest",
+      "component_count": 2,
+      "selected_component_area": 5041,
+      "selected_component_bbox": [
+        67,
+        165,
+        338,
+        201
+      ],
+      "crop_bbox": [
+        65,
+        163,
+        340,
+        203
+      ],
+      "edge_touch": false,
+      "output_size": [
+        166,
+        24
+      ],
+      "paste_position": [
+        13,
+        84
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        384,
+        0,
+        768,
+        384
+      ],
+      "component_mode": "largest",
+      "component_count": 2,
+      "selected_component_area": 5018,
+      "selected_component_bbox": [
+        67,
+        165,
+        338,
+        201
+      ],
+      "crop_bbox": [
+        65,
+        163,
+        340,
+        203
+      ],
+      "edge_touch": false,
+      "output_size": [
+        166,
+        24
+      ],
+      "paste_position": [
+        13,
+        84
+      ]
+    },
+    {
+      "grid": [
+        0,
+        2
+      ],
+      "source_box": [
+        768,
+        0,
+        1152,
+        384
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 5035,
+      "selected_component_bbox": [
+        57,
+        165,
+        338,
+        201
+      ],
+      "crop_bbox": [
+        55,
+        163,
+        340,
+        203
+      ],
+      "edge_touch": false,
+      "output_size": [
+        172,
+        24
+      ],
+      "paste_position": [
+        10,
+        84
+      ]
+    },
+    {
+      "grid": [
+        0,
+        3
+      ],
+      "source_box": [
+        1152,
+        0,
+        1536,
+        384
+      ],
+      "component_mode": "largest",
+      "component_count": 2,
+      "selected_component_area": 5018,
+      "selected_component_bbox": [
+        67,
+        165,
+        338,
+        201
+      ],
+      "crop_bbox": [
+        65,
+        163,
+        340,
+        203
+      ],
+      "edge_touch": false,
+      "output_size": [
+        166,
+        24
+      ],
+      "paste_position": [
+        13,
+        84
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}
