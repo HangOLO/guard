@@ -10,7 +10,7 @@
   --accent-strong: #f0c766;
   --red: #a43f32;
   --green: #4c8f7a;
-  --title-art-max-width: 1093px;
+  --title-art-max-width: 1672px;
 }
 
 * {
@@ -101,8 +101,8 @@ button:focus-visible {
 
 .title-artboard {
   position: relative;
-  width: min(100vw, calc(var(--vh, 1vh) * 133.333333), var(--title-art-max-width));
-  aspect-ratio: 1448 / 1086;
+  width: min(100vw, calc(var(--vh, 1vh) * 177.683315), var(--title-art-max-width));
+  aspect-ratio: 1672 / 941;
   pointer-events: none;
 }
 
