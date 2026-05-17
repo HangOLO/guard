@@ -446,6 +446,11 @@ h2 {
 
 .duck-button {
   background: rgba(164, 63, 50, 0.86);
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  touch-action: none;
+  user-select: none;
 }
 
 [hidden] {

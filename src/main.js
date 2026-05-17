@@ -1868,6 +1868,18 @@
       });
     }
 
+    function preventLongPressSelection(button) {
+      if (!button) {
+        return;
+      }
+
+      ["contextmenu", "selectstart", "dragstart"].forEach((eventName) => {
+        button.addEventListener(eventName, (event) => {
+          event.preventDefault();
+        });
+      });
+    }
+
     bindTap(targets.startButton, "start");
     bindTap(targets.soundButton, "toggleSound");
     bindTap(targets.dialogueNextButton, "start");
@@ -1875,6 +1887,7 @@
     bindHold(targets.moveLeftButton, "moveLeft");
     bindHold(targets.moveRightButton, "moveRight");
     bindHold(targets.duckButton, "duck");
+    preventLongPressSelection(targets.duckButton);
     bindTap(targets.jumpButton, "jump");
 
     const keyMap = new Map([
