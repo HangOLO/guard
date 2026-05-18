@@ -149,8 +149,8 @@ export function createSceneFlow({
     if (state.current === STATES.GAME_OVER && action.type === "restart" && action.phase === "pressed") {
       audio.resume();
       if (state.transition("restart")) {
-        audio.play("start");
-        startApproach();
+        collisionScore.reset();
+        startRunner();
       }
     }
   }

@@ -11,7 +11,7 @@ const TRANSITIONS = Object.freeze({
   [STATES.APPROACH]: { contactSoldier: STATES.DIALOGUE },
   [STATES.DIALOGUE]: { dialogueComplete: STATES.RUNNER },
   [STATES.RUNNER]: { hitSoldier: STATES.GAME_OVER },
-  [STATES.GAME_OVER]: { restart: STATES.APPROACH },
+  [STATES.GAME_OVER]: { restart: STATES.RUNNER },
 });
 
 export function createGameState() {

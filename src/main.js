@@ -14,7 +14,7 @@
     [STATES.APPROACH]: { contactSoldier: STATES.DIALOGUE },
     [STATES.DIALOGUE]: { dialogueComplete: STATES.RUNNER },
     [STATES.RUNNER]: { hitSoldier: STATES.GAME_OVER },
-    [STATES.GAME_OVER]: {},
+    [STATES.GAME_OVER]: { restart: STATES.RUNNER },
   });
 
   const RUNNER_SPRITE_SCALE = 0.5;
@@ -96,7 +96,7 @@
           return false;
         }
 
-        if (eventName === "start") {
+        if (eventName === "start" || eventName === "restart") {
           resetRunData();
         }
 
@@ -846,6 +846,7 @@
       dialogueNextButton: document.querySelector("#dialogueNextButton"),
       gameOverScreen: document.querySelector("#gameOverScreen"),
       finalScoreValue: document.querySelector("#finalScoreValue"),
+      restartButton: document.querySelector("#restartButton"),
       approachControls: document.querySelector("#approachControls"),
       moveLeftButton: document.querySelector("#moveLeftButton"),
       moveRightButton: document.querySelector("#moveRightButton"),
@@ -884,6 +885,7 @@
       getInputTargets() {
         return {
           startButton: refs.startButton,
+          restartButton: refs.restartButton,
           soundButton: refs.soundButton,
           dialogueNextButton: refs.dialogueNextButton,
           moveLeftButton: refs.moveLeftButton,
@@ -1768,6 +1770,14 @@
         return;
       }
 
+      if (state.current === STATES.GAME_OVER && action.type === "restart" && action.phase === "pressed") {
+        audio.resume();
+        if (state.transition("restart")) {
+          collisionScore.reset();
+          startRunner();
+        }
+      }
+
     }
 
     return {
@@ -1921,6 +1931,7 @@
     }
 
     bindTap(targets.startButton, "start");
+    bindTap(targets.restartButton, "restart");
     bindTap(targets.soundButton, "toggleSound");
     bindTap(targets.dialogueNextButton, "start");
     bindTap(targets.interactButton, "interact");
@@ -1962,7 +1973,9 @@
 
       if (event.code === "Enter") {
         const current = getState();
-        if (current !== STATES.GAME_OVER) {
+        if (current === STATES.GAME_OVER) {
+          emitOnce("restart", "keyboard");
+        } else {
           emitOnce("start", "keyboard");
         }
         event.preventDefault();
