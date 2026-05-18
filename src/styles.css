@@ -446,6 +446,10 @@ h2 {
 
 .duck-button {
   background: rgba(164, 63, 50, 0.86);
+}
+
+.jump-button,
+.duck-button {
   display: inline-grid;
   place-items: center;
   -webkit-touch-callout: none;
@@ -457,6 +461,7 @@ h2 {
   user-select: none;
 }
 
+.jump-button::before,
 .duck-button::before {
   content: attr(aria-label);
   pointer-events: none;

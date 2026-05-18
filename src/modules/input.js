@@ -33,6 +33,31 @@ export function createInput({ targets, getState }) {
     });
   }
 
+  function bindTouchTap(button, action) {
+    if (!button) {
+      return;
+    }
+
+    let touchStarted = false;
+
+    button.addEventListener("touchstart", () => {
+      touchStarted = true;
+    }, { passive: true });
+
+    button.addEventListener("touchcancel", () => {
+      touchStarted = false;
+    }, { passive: true });
+
+    button.addEventListener("touchend", (event) => {
+      if (!touchStarted) {
+        return;
+      }
+      touchStarted = false;
+      event.preventDefault();
+      emitOnce(action, "touch");
+    }, { passive: false });
+  }
+
   function bindHold(button, action) {
     if (!button) {
       return;
@@ -97,6 +122,8 @@ export function createInput({ targets, getState }) {
   bindHold(targets.duckButton, "duck");
   preventLongPressSelection(targets.duckButton);
   bindTap(targets.jumpButton, "jump");
+  bindTouchTap(targets.jumpButton, "jump");
+  preventLongPressSelection(targets.jumpButton);
 
   const keyMap = new Map([
     ["ArrowLeft", "moveLeft"],
