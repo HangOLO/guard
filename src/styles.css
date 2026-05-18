@@ -446,10 +446,23 @@ h2 {
 
 .duck-button {
   background: rgba(164, 63, 50, 0.86);
+  display: inline-grid;
+  place-items: center;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  pointer-events: auto;
+  touch-action: none;
+  user-select: none;
+}
+
+.duck-button::before {
+  content: attr(aria-label);
+  pointer-events: none;
   -webkit-touch-callout: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
-  touch-action: none;
   user-select: none;
 }
 

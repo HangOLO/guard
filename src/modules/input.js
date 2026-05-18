@@ -65,10 +65,25 @@ export function createInput({ targets, getState }) {
       return;
     }
 
+    function clearTextSelection() {
+      const selection = window.getSelection?.();
+      if (selection?.rangeCount) {
+        selection.removeAllRanges();
+      }
+    }
+
     ["contextmenu", "selectstart", "dragstart"].forEach((eventName) => {
       button.addEventListener(eventName, (event) => {
         event.preventDefault();
+        clearTextSelection();
       });
+    });
+
+    ["touchstart", "touchmove", "touchend", "touchcancel"].forEach((eventName) => {
+      button.addEventListener(eventName, (event) => {
+        event.preventDefault();
+        clearTextSelection();
+      }, { passive: false });
     });
   }
 
